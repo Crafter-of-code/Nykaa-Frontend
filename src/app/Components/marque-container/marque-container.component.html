@@ -1,0 +1,19 @@
+<div class="max-w-fit marquee_container h-fit">
+  <marquee
+    direction="left"
+    scrollamount="10"
+    scrolldelay="0"
+    loop="10"
+    bgcolor="#FFFFff"
+    class="marquee_tag"
+  >
+    <div class="flex">
+      <p
+        *ngFor="let i of [].constructor(limit); let index = index"
+        class="marquee_tag_paragph"
+      >
+        {{ text_to_display }}
+      </p>
+    </div>
+  </marquee>
+</div>

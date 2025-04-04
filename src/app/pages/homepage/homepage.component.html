@@ -1,0 +1,119 @@
+<app-bottom-header />
+<main class="w-full flex justify-center">
+  <div class="">
+    <app-marque-container [text_to_display]="Send_to_the_marquee_tag" />
+    <a routerLink="#">
+      <img
+        src="https://images-static.nykaa.com/uploads/fe256acb-4126-472a-ab35-1a3e9906da5a.jpg?tr=cm-pad_resize,w-1800"
+        alt="image"
+        class="top_image"
+      />
+    </a>
+    <div>
+      <!-- <app-section-heading [heading]="First_heading" /> -->
+      <!-- <app-heading [Heading]="First_heading" /> -->
+      <div class="flex justify-center">
+        <img
+          src="https://images-static.nykaa.com/uploads/1ba63c40-ad9f-4ac8-ad21-dabf23f81180.jpg?tr=cm-pad_resize,w-1800"
+          alt="image"
+        />
+      </div>
+    </div>
+    <div class="w-full first_offer_container">
+      <div
+        *ngFor="let item of Brand_offer"
+        class="image_and_text_container_in_first_offer_container xl:w-[500px]"
+      >
+        <img src="{{ item.image_url }}" alt="image" class="rounded-lg" />
+        <div class="lg:relative bottom-15 left-2 offer_container_for_first_div">
+          <h1 class="text_container_for_first_offer_container">
+            {{ item.offer }}
+          </h1>
+          <h2
+            class="text_container_for_first_offer_container text_container_for_additional_offer"
+          >
+            {{ item.Additional_offer }}
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!--voting for Naykaa Poster-->
+    <div class="w-full">
+      <img
+        src="https://images-static.nykaa.com/uploads/ce6faf8d-df47-47a4-87d1-e6b11e094d59.png?tr=cm-pad_resize,w-1200"
+        alt=""
+        class="w-full"
+      />
+    </div>
+    <!--Major Beauty Bargain heading-->
+    <div class="bg-[#9bede0]">
+      <app-heading [Heading]="Major_beauty_bargain_heading" />
+    </div>
+    <!--Major Beauty Bargain Carousel-->
+    <div class="w-full h-fit bg-[#9beddf] flex justify-center">
+      <app-botton-carousel
+        [Template_data]="Major_beauty_bargain_carousel_data"
+      />
+    </div>
+
+    <!--Major Beauty Bargain Crousel-->
+    <!--Second Major Markdown-->
+    <app-heading [Heading]="Second_heading" />
+    <img src="" alt="" />
+    <div class="max-w-full flex justify-center bg-[#F1FFFF]">
+      <div class="flex justify-center flex-wrap max-w-[1500px]">
+        <div
+          *ngFor="let item of Today_major_breakdown"
+          class="image_and_text_container_in_first_offer_container flex flex-col items-center min-w-fit"
+        >
+          <img
+            src="{{ item.url }}"
+            alt=""
+            class="rounded-lg h-[190px] flex-1"
+          />
+          <div class="text_container_for_first_offer_container">
+            <h1>{{ item.offer }}</h1>
+            <h2>{{ item.additional_offer }}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--So. Many. Deals-->
+    <!--Section number 3-->
+    <app-heading [Heading]="Third_heading" />
+    <div class="w-full flex justify-center m-auto">
+      <div class="max-w-[900px] min-w-[300px] flex">
+        <div *ngFor="let item of so_many_deals">
+          <img src="{{ item.url }}" alt="" />
+          <div>
+            <h1>{{ item.offer }}</h1>
+            <h2>{{ item.additional_offer }}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Beauty Steal to Shop-->
+    <app-heading [Heading]="Fourth_heading" />
+    <div class="w-full flex justify-center">
+      <div class="flex flex-wrap justify-center">
+        <div *ngFor="let item of beauty_steal_to_shop_data" class="max-w-52">
+          <img src="{{ item.url }}" alt="" />
+          <div class="">
+            <h1 class="text-center font-bold">{{ item.offer }}</h1>
+            <h2 class="text-center font-bold">{{ item.additional_offer }}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Almost completed-->
+    <div class="w-full h-32 flex items-center justify-center">
+      <button
+        class="w-[70%] max-w-[1500px] h-[40%] rounded-lg bg-[#e80070] text-white"
+      >
+        Shop now
+      </button>
+    </div>
+    <!-----------End of the page------------>
+  </div>
+  <!-- <p>homepage works!</p> -->
+</main>

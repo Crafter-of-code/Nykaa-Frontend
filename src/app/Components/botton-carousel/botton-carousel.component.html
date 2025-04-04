@@ -1,0 +1,38 @@
+<!-- max-w-[1150px] -->
+<div class="h-fit container_div">
+  <div class="flex h-[100%] items-center">
+    <!-- <div class="h-full flex items-center w-fit rounded-full">
+      <button
+        type="button"
+        class="relative rounded-full bg-white h-fit w-fit"
+        (click)="Decrement()"
+      >
+        <
+      </button>
+    </div> -->
+    <ul
+      class="w-fit flex-1 h-[100%] flex justify-around item_container overflow-x-scroll"
+    >
+      <li
+        *ngFor="let item of Template_data; let i = index"
+        class="flex items-center justify-center rounded-2xl"
+      >
+        <div class="flex justify-center flex-col info__container">
+          <h1>{{ item.title | uppercase }}</h1>
+          <h2>Under</h2>
+          <h1>{{ item.price }}</h1>
+        </div>
+        <!-- <ng-template #title_else> nothign </ng-template> -->
+      </li>
+    </ul>
+    <!-- <div class="h-full flex items-center w-fit">
+      <button
+        type="button"
+        class="relative rounded-full bg-white h-fit w-fit"
+        (click)="Increment()"
+      >
+        >
+      </button>
+    </div> -->
+  </div>
+</div>

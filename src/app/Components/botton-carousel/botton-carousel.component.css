@@ -1,0 +1,35 @@
+.container_div {
+  /* border: 2px dashed black; */
+  width: 90vw;
+  margin: 0.9rem;
+}
+ul::-webkit-scrollbar {
+  display: none;
+}
+li {
+  background-image: linear-gradient(to bottom, #a1f9ed, #a3f8ef);
+  width: 250px !important;
+  margin: 1rem;
+}
+li div {
+  padding: 0px 2rem;
+  margin: 1.2rem 0px;
+  height: 100%;
+}
+div button {
+  padding: 1rem;
+  font-weight: 500;
+}
+.info__container {
+  h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+.info__container h1:last-child {
+  color: #fff;
+  text-shadow: 0 0 10px #23ac9d, 0 0 20px #23ac9d, 0 0 30px #23ac9d;
+}

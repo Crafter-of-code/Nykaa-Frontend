@@ -1,0 +1,37 @@
+/* Default styles for the hovering container */
+.howering_container {
+  width: 90%;
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background-color: gray;
+  color: white;
+  z-index: 10;
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+.list_container {
+  margin: 0.9rem auto;
+}
+.parent_anchor_tag_container a {
+  font-size: 14px !important;
+}
+/* Show the div when hovering over the li */
+.parent_anchor_tag_container:hover .howering_container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .howering_container {
+    width: 100%;
+    top: 3rem;
+    height: auto;
+  }
+}
+.button_header_main_container {
+  box-sizing: border-box;
+  /* box-shadow: 0px 10px 15px rgba(72, 72, 72, 0.01); */
+  -webkit-tap-highlight-color: transparent;
+}

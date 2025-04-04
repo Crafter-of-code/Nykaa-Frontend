@@ -1,0 +1,13 @@
+.content_section {
+  margin-top: 10px;
+}
+@media screen and (max-width: 1023px) {
+  .main_body_container {
+    top: 3.8rem;
+  }
+}
+@media screen and (max-width: 880px) {
+  .main_body_container {
+    top: 6.9rem;
+  }
+}

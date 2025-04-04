@@ -1,0 +1,13 @@
+.marquee_tag {
+  width: 100vw;
+  height: fit-content;
+  background-image: linear-gradient();
+  margin-bottom: 0px;
+  background-image: linear-gradient(to right, #9bece0, #fcfae7);
+}
+.marquee_tag_paragph {
+  margin: auto 10px;
+  font-size: 11px;
+  color: #27bea7;
+  font-weight: 500;
+}

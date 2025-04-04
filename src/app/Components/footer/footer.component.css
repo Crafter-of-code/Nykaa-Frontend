@@ -1,0 +1,25 @@
+.button_for_email_submission {
+  padding: 0.2rem 0.5rem;
+  font-weight: 300;
+}
+.email_div {
+  padding: 0px 0.5rem 0px 0px;
+}
+h1 {
+  font-size: 14px !important;
+  font-weight: 500;
+}
+svg {
+  margin: 0px 0.3rem;
+}
+.email_input {
+  margin: 0px 0.5rem;
+  color: white;
+}
+.email_div::placeholder {
+  color: white;
+  font-weight: 400;
+}
+.first_div {
+  margin-bottom: 0.7rem;
+}
