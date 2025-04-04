@@ -2,7 +2,7 @@
 <main class="w-full flex justify-center">
   <div class="">
     <app-marque-container [text_to_display]="Send_to_the_marquee_tag" />
-    <a routerLink="#">
+    <a routerLink="#" class="">
       <img
         src="https://images-static.nykaa.com/uploads/fe256acb-4126-472a-ab35-1a3e9906da5a.jpg?tr=cm-pad_resize,w-1800"
         alt="image"
@@ -16,16 +16,26 @@
         <img
           src="https://images-static.nykaa.com/uploads/1ba63c40-ad9f-4ac8-ad21-dabf23f81180.jpg?tr=cm-pad_resize,w-1800"
           alt="image"
+          class="first_offer_heading flex-2"
         />
       </div>
     </div>
-    <div class="w-full first_offer_container">
+    <!--first offer container-->
+    <div
+      class="w-full first_offer_container flex lg:flex-wrap justify-center max-lg:flex-col max-lg:items-center max-sm:items-center"
+    >
       <div
         *ngFor="let item of Brand_offer"
-        class="image_and_text_container_in_first_offer_container xl:w-[500px]"
+        class="image_and_text_container_in_first_offer_container max-lg:w-[100%] lg:w-[30%] max-sm:w-[90%] max-lg:flex max-lg:items.center max-sm:flex max-lg:items-center max-lg:flex-col max-sm:flex-col"
       >
-        <img src="{{ item.image_url }}" alt="image" class="rounded-lg" />
-        <div class="lg:relative bottom-15 left-2 offer_container_for_first_div">
+        <img
+          src="{{ item.image_url }}"
+          alt="image"
+          class="rounded-lg image in the first offer container max-lg:w-full max-sm:w-full"
+        />
+        <div
+          class="relative bottom-15 left-2 offer_container_for_first_div flex flex-col"
+        >
           <h1 class="text_container_for_first_offer_container">
             {{ item.offer }}
           </h1>
